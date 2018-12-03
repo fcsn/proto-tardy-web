@@ -57,14 +57,28 @@ class AppointmentInfo extends React.Component {
             <div>
                 {this.state.appoFuture.map(appo =>
                     <div key={appo.id} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', border: '0.5px solid #e2e2e2', backgroundColor: '#FFFFFF', marginTop: '0.5rem', borderRadius: '5px', height: '4rem' }}>
-                        <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '1rem' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '1.5rem' }}>
                             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'left', marginTop: '0.5rem' }}>
                                 <div style={{ fontSize: '0.8rem', color: '#bcbcbc' }}>{appo.date}</div>
                                 <div style={{ fontSize: '0.5rem', marginLeft: '0.3rem' }}>D - 2</div>
                             </div>
                             <div style={{ fontSize: '1.2rem', marginTop: '0.3rem' }}>{appo.title}</div>
                         </div>
-                        <button>toggle</button>
+                        <button style={{ marginRight: '1.5rem' }}>toggle</button>
+                    </div>
+                )}
+            </div>
+        )
+
+        const AppoPastList = () => (
+            <div>
+                {this.state.appoPast.map(appo =>
+                    <div key={appo.id} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', border: '0.5px solid #e2e2e2', backgroundColor: '#FFFFFF', marginTop: '0.5rem', borderRadius: '5px', height: '4rem' }}>
+                        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
+                            <div style={{ fontSize: '1.2rem', color: 'a3a3a3' }}>{appo.maleLateTime}</div>
+                            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', fontWeight: 'lighter', fontSize: '0.9rem' }}><div>{appo.date}</div></div>
+                            <div style={{ fontSize: '1.2rem', color: 'a3a3a3' }}>{appo.maleLateTime}</div>
+                        </div>
                     </div>
                 )}
             </div>
@@ -84,14 +98,13 @@ class AppointmentInfo extends React.Component {
         );
 
         const AppoPast = () => (
-            <div className="appo-future-outer">
-                <div className="appo-future-header" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: '1rem' }}>
-                    <div><p style={{ marginTop: '0px', color: 'gray', fontSize: '0.9rem' }}>진행중인 약속</p></div>
-                    <a style={ button }>편집하기</a>
+            <div className="appo-past-outer">
+                <div className="appo-past-header" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: '2rem' }}>
+                    <div><p style={{ marginTop: '0px', color: 'gray', fontSize: '0.9rem' }}>지나간 약속</p></div>
                 </div>
 
-                <div className="appo-future-content">
-                    <AppoFutureList/>
+                <div className="appo-past-content">
+                    <AppoPastList/>
                 </div>
             </div>
         )
@@ -99,6 +112,7 @@ class AppointmentInfo extends React.Component {
         return (
             <div style={{ backgroundColor: '#f2f2f2', boxSizing: 'border-box', padding: '1rem' }}>
                 <AppoFuture/>
+                <div style={{ borderBottom: '0.5px solid #e2e2e2 ', marginTop: '2rem' }}></div>
                 <AppoPast/>
             </div>
         );
