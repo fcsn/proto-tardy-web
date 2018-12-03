@@ -4,8 +4,11 @@ import StateInfo from 'components/home/StateInfo';
 
 class HomeContainer extends React.Component {
     render () {
+        const defaultPadding = {
+            minHeight: '100vh'
+        }
         return (
-            <div>
+            <div className="home-container" style={defaultPadding}>
                 <StateInfo/>
                 <AppointmentInfo/>
             </div>
