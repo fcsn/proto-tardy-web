@@ -4,14 +4,20 @@ class AppointmentInfo extends React.Component {
     constructor (props) {
         super(props);
         this.state = {
+            isEdit: false,
+            isExpand: false,
             appoFuture: [
                 {
                     date: '2018. 10. 30',
+                    time: '오후 2:45',
+                    timeLimit: '22시간 45분 45초',
                     title: '포순이랑 영화보는 날',
                     location: '신사',
                     id: 1
                 }, {
                     date: '2018. 11. 06',
+                    time: '오후 3:00',
+                    timeLimit: '20시간 45분 45초',
                     title: '포순이랑 경주 여행',
                     location: '경주',
                     id: 2
@@ -35,6 +41,23 @@ class AppointmentInfo extends React.Component {
                 }
             ]
         };
+        this._toggleEdit = this._toggleEdit.bind(this);
+        this._toggleExpand = this._toggleExpand.bind(this);
+        this._removeAppo = this._removeAppo.bind(this);
+    }
+
+    _toggleEdit () {
+        const { isEdit } = this.state
+        this.setState({ isEdit: !isEdit });
+    }
+
+    _toggleExpand () {
+        const { isExpand } = this.state
+        this.setState({ isExpand: !isExpand });
+    }
+
+    _removeAppo () {
+        console.log('Appo Removed!');
     }
 
     render () {
@@ -56,15 +79,40 @@ class AppointmentInfo extends React.Component {
         const AppoFutureList = () => (
             <div>
                 {this.state.appoFuture.map(appo =>
-                    <div key={appo.id} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', border: '0.5px solid #e2e2e2', backgroundColor: '#FFFFFF', marginTop: '0.5rem', borderRadius: '5px', height: '4rem' }}>
+                    <div key={appo.id} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', border: '0.5px solid #e2e2e2', backgroundColor: '#FFFFFF', marginTop: '0.5rem', borderRadius: '5px', height: '4.3rem' }}>
                         <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '1.5rem' }}>
-                            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'left', marginTop: '0.5rem' }}>
+                            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'left', marginTop: '0.8rem' }}>
                                 <div style={{ fontSize: '0.8rem', color: '#bcbcbc' }}>{appo.date}</div>
                                 <div style={{ fontSize: '0.5rem', marginLeft: '0.3rem' }}>D - 2</div>
                             </div>
                             <div style={{ fontSize: '1.2rem', marginTop: '0.3rem' }}>{appo.title}</div>
                         </div>
-                        <button style={{ marginRight: '1.5rem' }}>toggle</button>
+                        <button style={{ marginRight: '1.5rem' }} onClick={() => this._toggleExpand()}>toggle</button>
+                    </div>
+                )}
+            </div>
+        )
+
+        const AppoFutureListEditable = () => (
+            <div>
+                {this.state.appoFuture.map(appo =>
+                    <div key={appo.id} className="appo-future-content-editable" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+                        <div style={{ marginTop: '0.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'left' }}>
+                                <div onClick={() => this._removeAppo()}>remove</div>
+                            </div>
+                        </div>
+
+                        <div style={{ width: '80%', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', border: '0.5px solid #e2e2e2', backgroundColor: '#FFFFFF', marginTop: '0.5rem', borderRadius: '5px', height: '4.3rem' }}>
+                            <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '1.5rem' }}>
+                                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'left', marginTop: '0.8rem' }}>
+                                    <div style={{ fontSize: '0.8rem', color: '#bcbcbc' }}>{appo.date}</div>
+                                    <div style={{ fontSize: '0.5rem', marginLeft: '0.3rem' }}>D - 2</div>
+                                </div>
+                                <div style={{ fontSize: '1.2rem', marginTop: '0.3rem' }}>{appo.title}</div>
+                            </div>
+                            <div style={{ marginRight: '1.5rem' }}></div>
+                        </div>
                     </div>
                 )}
             </div>
@@ -88,12 +136,15 @@ class AppointmentInfo extends React.Component {
             <div className="appo-future-outer">
                 <div className="appo-future-header" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: '1rem' }}>
                     <div><p style={{ marginTop: '0px', color: 'gray', fontSize: '0.9rem' }}>진행중인 약속</p></div>
-                    <a style={ button }>편집하기</a>
+                    <div style={ button } onClick={() => this._toggleEdit()}>편집하기</div>
                 </div>
 
-                <div className="appo-future-content">
-                    <AppoFutureList/>
-                </div>
+                { !this.state.isEdit
+                    ? <div className="appo-future-content">
+                        <AppoFutureList/>
+                    </div>
+                    : <AppoFutureListEditable/>
+                }
             </div>
         );
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeContainer from 'containers/home/HomeContainer';
+import PageTemplate from 'components/common/PageTemplate/PageTemplate';
 
 class HomePage extends React.Component {
     constructor (props) {
@@ -11,9 +12,9 @@ class HomePage extends React.Component {
 
     render () {
         return (
-            <div>
+            <PageTemplate>
                 <HomeContainer/>
-            </div>
+            </PageTemplate>
         );
     }
 };

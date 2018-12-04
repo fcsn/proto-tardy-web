@@ -1,9 +1,10 @@
 import React from 'react';
+import CreateContainer from 'containers/create/CreateContainer';
 
 const CreatePage = () => {
     return (
         <div>
-            CreatePage
+            <CreateContainer/>
         </div>
     );
 };
