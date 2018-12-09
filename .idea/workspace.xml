@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fae07144-0bc3-492a-9564-766e67fa176f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/common/Loading/Loading.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Loading/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/PageTemplate/PageTemplate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/PageTemplate/PageTemplate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/PageTemplate/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/lib/_all.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/lib/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/utils.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Loading/Loading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/AddRegisterAppo/AddRegisterAppo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/AddRegisterAppo/AddRegisterAppo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/AppointmentInfo/AppointmentInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/AppointmentInfo/AppointmentInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/create/CreateContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/create/CreateContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CreatePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CreatePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,13 +20,15 @@
     <session id="1680656227">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.12" value="3" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -50,7 +38,7 @@
           <entry key="html" value="1" />
           <entry key="js" value="62" />
           <entry key="json" value="5" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="scss" value="7" />
         </counts>
       </usages-collector>
@@ -60,14 +48,14 @@
           <entry key="HTML" value="1" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="62" />
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="6" />
+          <entry key="ESLintLanguageService" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -76,6 +64,7 @@
           <entry key="env" value="33" />
           <entry key="js" value="6037" />
           <entry key="json" value="7" />
+          <entry key="md" value="1" />
           <entry key="scss" value="20" />
         </counts>
       </usages-collector>
@@ -84,6 +73,7 @@
           <entry key="CSS" value="19" />
           <entry key="JSON" value="7" />
           <entry key="JavaScript" value="6037" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="33" />
           <entry key="SCSS" value="20" />
         </counts>
@@ -134,20 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/home/AppointmentInfo/AppointmentInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/home/AddRegisterAppo/AddRegisterAppo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            <state relative-caret-position="443">
+              <caret line="157" column="8" lean-forward="true" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -156,7 +137,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/home/StateInfo/StateInfo.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="702">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -216,6 +197,7 @@
         <option value="$PROJECT_DIR$/src/components/home/StateInfo/StateInfo.js" />
         <option value="$PROJECT_DIR$/src/components/home/AppointmentInfo/AppointmentInfo.js" />
         <option value="$PROJECT_DIR$/src/components/home/AddRegisterAppo/AddRegisterAppo.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -235,7 +217,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="4" />
     <option name="y" value="23" />
     <option name="width" value="1185" />
@@ -263,34 +245,6 @@
               <item name="proto-tardy-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proto-tardy-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proto-tardy-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proto-tardy-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proto-tardy-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="PageTemplate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proto-tardy-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proto-tardy-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proto-tardy-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proto-tardy-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="proto-tardy-web" type="b2602c69:ProjectViewProjectNode" />
@@ -373,18 +327,22 @@
       <workItem from="1543847665630" duration="389000" />
       <workItem from="1543882638870" duration="3238000" />
       <workItem from="1543911672915" duration="160000" />
-      <workItem from="1543925012896" duration="925000" />
+      <workItem from="1543925012896" duration="1041000" />
+      <workItem from="1543974794459" duration="553000" />
+      <workItem from="1544065808361" duration="183000" />
+      <workItem from="1544073250591" duration="778000" />
+      <workItem from="1544152936888" duration="426000" />
+      <workItem from="1544351217515" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25759000" />
+    <option name="totallyTimeSpent" value="28414000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17480409" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -397,7 +355,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.23236515" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.1939834" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Quokka" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -412,14 +370,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.eslintrc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -587,6 +537,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="182">
+            <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/home/AddRegisterAppo/AddRegisterAppo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/common/PageTemplate/PageTemplate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -624,21 +591,14 @@
     <entry file="file://$PROJECT_DIR$/src/components/home/StateInfo/StateInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/home/AppointmentInfo/AppointmentInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/home/AddRegisterAppo/AddRegisterAppo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        <state relative-caret-position="443">
+          <caret line="157" column="8" lean-forward="true" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
         </state>
       </provider>
     </entry>
